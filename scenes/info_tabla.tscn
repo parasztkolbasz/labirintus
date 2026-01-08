@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://qf2xjta1o8be"]
+
+[ext_resource type="Texture2D" uid="uid://cenharq5y6ld1" path="res://art/images.jpg" id="1_ujats"]
+[ext_resource type="Script" uid="uid://3yxara3q1w17" path="res://scenes/Label.cs" id="2_llioc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_llioc"]
+font_color = Color(0, 0, 0, 1)
+outline_color = Color(0, 0, 0, 1)
+
+[node name="InfoTabla" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, -34)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ujats")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -49.0
+offset_top = -46.0
+offset_right = 326.0
+offset_bottom = 55.0
+scale = Vector2(0.25, 0.25)
+text = "Juss ki a labirintusból! 
+Egy kulcsot kell keresned a virágok alatt 
+A virágot felszedheted E betűvel 
+ Az enterrel a kulcsot felveszed és az ajtót nyitod"
+label_settings = SubResource("LabelSettings_llioc")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_llioc")

@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwbtq7aosyo6j"]
+
+[ext_resource type="Script" uid="uid://dyu8a36w75mi" path="res://Node2d.cs" id="1_yuoqp"]
+[ext_resource type="Texture2D" uid="uid://r0otcr43srbd" path="res://art/virsg.png" id="2_042ek"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t7rc6"]
+radius = 13.0
+
+[node name="Virag" type="Area2D"]
+script = ExtResource("1_yuoqp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_042ek")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_t7rc6")
